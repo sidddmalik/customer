@@ -16,7 +16,6 @@ function ConsumerListRow(props) {
             })
             .catch((err) => alert(err));
     }
-
     return (
         <tr>
             <td>{Name}</td>
@@ -25,16 +24,6 @@ function ConsumerListRow(props) {
             <td>{EmailID}</td>
             <td>{Services}</td>
             <td>{Pincode}</td>
-            <td class="d-flex justify-content-center">
-                <Link class="text-decoration-none text-light me-4" to={"/edit-service/" + _id}>
-                    <button class="btn btn-success">
-                        Edit
-                    </button>
-                </Link>
-                <button onClick={handleClick} class="btn btn-danger">
-                    Delete
-                </button>
-            </td>
         </tr>
     )
 }
